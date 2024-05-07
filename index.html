@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadre de Ventas de Pollo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Cuadre de Ventas de Pollo</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo 1 (1/8 de pollo)</h5>
+                        <input type="number" id="combo1" class="form-control" placeholder="Cantidad">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo 2 (1/8 de pollo)</h5>
+                        <input type="number" id="combo2" class="form-control" placeholder="Cantidad">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo 3 (1/4 de pollo)</h5>
+                        <input type="number" id="combo3" class="form-control" placeholder="Cantidad">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo 4 (1/4 de pollo)</h5>
+                        <input type="number" id="combo4" class="form-control" placeholder="Cantidad">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pollo Solo (1 pollo)</h5>
+                        <input type="number" id="polloSolo" class="form-control" placeholder="Cantidad">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pollo con Acompañantes (1 pollo)</h5>
+                        <input type="number" id="polloAcompanantes" class="form-control" placeholder="Cantidad">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Medio Pollo Solo (1/2 pollo)</h5>
+                        <input type="number" id="medioPolloSolo" class="form-control" placeholder="Cantidad">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Medio Pollo con Acompañantes (1/2 pollo)</h5>
+                        <input type="number" id="medioPolloAcompanantes" class="form-control" placeholder="Cantidad">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center mt-4">
+                <div class="card">
+                    <div class="card-body">
+                     <label for="polloRestanteEnteros">Pollo Restante + (lunch): </label>
+                <div>
+                    <input type="number" id="polloRestanteEnteros" class="form-control d-inline-block w-auto" placeholder="Pollos Enteros">
+                    <select id="polloRestanteFracciones" class="form-control d-inline-block w-auto">
+                        <option value="0">0</option>
+                        <option value="0.125">1/8</option>
+                        <option value="0.25">1/4</option>
+                        <option value="0.375">3/8</option>
+                        <option value="0.5">1/2</option>
+                        <option value="0.625">5/8</option>
+                        <option value="0.75">3/4</option>
+                        <option value="0.875">7/8</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            
+            <div class="col-12 text-center mt-4">
+                <button onclick="calcularTotal()" class="btn btn-primary">Calcular Total</button>
+                <h2 id="total">Total Pollos Vendidos: 0</h2>
+            </div>
+            <div class="col-12 text-center mt-4">
+                <button onclick="limpiarCampos()" class="btn btn-secondary">Limpiar Campos</button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
